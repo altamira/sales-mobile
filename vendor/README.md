@@ -60,8 +60,12 @@ Replace Ionic APP_ID from [https://apps.ionic.io/apps](https://apps.ionic.io/app
     // Set the app to use development pushes
     dev_push: false
   });
+  
+  ...
+});
 {code}
 
+To test submit POST to Ionic Push API
 
 {code}
 POST /api/v1/push HTTP/1.1
