@@ -1,0 +1,12 @@
+{
+  "name": "Gestao de Vendas",
+  "app_id": "c2d913ca",
+  "gulpStartupTasks": [
+    "sass",
+    "watch"
+  ],
+  "watchPatterns": [
+    "www/**/*",
+    "!www/lib/**/*"
+  ]
+}
