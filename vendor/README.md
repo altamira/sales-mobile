@@ -28,25 +28,27 @@ ionic serve --lab
 
 To test on Android device
 
-```shell
+```sh
 ionic run android --device
 ```
+
 device should be attached first
 
 To compile zipaligned and signed apk use Android Studio SDK: Build ->  Generate Signed APK
 
-Also check this tutorials for setup Push Notification from Scratch
+Also check this tutorials for setup Push Notification from scratch
 
-[http://docs.ionic.io/v1.0/docs/push-from-scratch](http://docs.ionic.io/v1.0/docs/push-from-scratch)
-[http://docs.ionic.io/v1.0/docs/push-android-setup](http://docs.ionic.io/v1.0/docs/push-android-setup)
+(http://docs.ionic.io/v1.0/docs/push-from-scratch)
 
-To setup GCM [GCM (Google Cloud Message)](https://developers.google.com/mobile/add)
+(http://docs.ionic.io/v1.0/docs/push-android-setup)
 
-### To test notification using GCM (Google Cloud Message)
+To setup GCM [GCM Google Cloud Message](https://developers.google.com/mobile/add)
 
-Replace Ionic APP_ID from [https://apps.ionic.io/apps](https://apps.ionic.io/apps), PUBLIC_KEY from [https://apps.ionic.io/app/c2d913ca/config/keys](https://apps.ionic.io/app/c2d913ca/config/keys) and [GCM Project Number](https://console.developers.google.com/project/gestao-de-vendas) in file [/sales/vendor/www/js/app.js](/sales/vendor/www/js/app.js) as follow:
+### To test notification using GCM Google Cloud Message
 
-{code}
+Replace Ionic `APP_ID` from [https://apps.ionic.io/apps](https://apps.ionic.io/apps), `PUBLIC_KEY` from [https://apps.ionic.io/app/c2d913ca/config/keys](https://apps.ionic.io/app/c2d913ca/config/keys) and [GCM Project Number](https://console.developers.google.com/project/gestao-de-vendas) in file [/sales/vendor/www/js/app.js](/sales/vendor/www/js/app.js) as follow:
+
+```sh
 .config(function($stateProvider, $urlRouterProvider, $ionicAppProvider) {
 
   // Identify app
@@ -63,11 +65,11 @@ Replace Ionic APP_ID from [https://apps.ionic.io/apps](https://apps.ionic.io/app
   
   ...
 });
-{code}
+```
 
-To test submit POST to Ionic Push API
+### To test submit POST to Ionic Push API
 
-{code}
+```sh
 POST /api/v1/push HTTP/1.1
 Host: push.ionic.io
 Content-Type: application/json
@@ -92,7 +94,7 @@ Cache-Control: no-cache
     }
   }
 }
-{code}
+```
 
 Also check [Sending Push](http://docs.ionic.io/v1.0/docs/push-sending-push)
 
