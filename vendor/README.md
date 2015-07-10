@@ -79,17 +79,23 @@ Cache-Control: no-cache
 
 {
   "tokens":[
-    "APA91bHdGtWKBmykJerBi8gkqhYSF7Hgm3N6g6DRPylUt4Wk3F7RmljbZNBkQ8uFYh6RETcxde94fQ0yPscBlJlgzYdqXfLQKoB71v3Odw9zC6EjMo5Ajme0mnHp3P21d5K1Dmh-Gn5n"
+    "APA91bHjP3QyFPw1fHAH_ze3o168yIRDY7GChQMFR0yg2BwtVgzdCND2Qfov4GcC5n8BvdCRT9bWqgA3DYuFrG_lpMoh-r1mOPsDyI8eYHKJF_TkniCxLcjqzcUFv1SqMJ8tHIsUOCvK"
   ],
   "notification":{
-    "alert":"Eh Funciona",
+    "alert":"Nova Oportunidade: ARMARINHOS FERNANDO",
     "android":{
       "collapseKey":"foo",
       "delayWhileIdle":true,
       "timeToLive":300,
       "payload":{
-        "key1":"value",
-        "key2":"value"
+        "organization": {
+          "name":"ARMARINHOS FERNANDO",
+          "address": "Rua Quinze de Novembro, 1232"
+        },          
+        "contact": {
+          "name": "Claudio",
+          "phone": "99293-2303"
+        }
       }
     }
   }
